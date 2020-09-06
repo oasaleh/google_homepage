@@ -15,6 +15,11 @@ body {
     flex-direction: column;
     justify-items: center;
 }
+
+ul {
+    list-style: none;
+    display: inline;
+}
 /* ------- Navigation Bar ------- */
 
 nav {
@@ -24,10 +29,9 @@ nav {
     padding: 6px;
     align-items: center;
     margin-top: 6px;
+    margin-right: 6px;
 }
 nav ul {
-    list-style: none;
-    display: inline;
     padding: 16px 0px 0px 0px;
     margin: 0 5px;
 
@@ -37,7 +41,9 @@ nav ul li {
     margin-left: 15px;
 }
 nav ul a {
+    color: rgba(0,0,0,0.87);
     text-decoration: none;
+
 }
 
 .nav-left {
@@ -54,12 +60,15 @@ nav ul a {
     margin: 0;
     padding: 0;
 }
-
+.nav-right li a {
+    font-size: 13px;
+}
 .gproducts {
     display: flex;
     align-items: center;
     width: 16px;
     padding: 0px 19px;
+    padding-right: 23px;
     cursor: pointer;
 }
 .signin {
@@ -91,6 +100,7 @@ nav ul a {
     min-height: 92px;
     max-height: 290px;
     flex-grow: 4;
+    margin-top: 204px;
 }
 .logo {
     height: 92px;
@@ -100,5 +110,64 @@ nav ul a {
     object-position: center bottom;
     width: auto; 
 }
+/* ------- Search Bar ------- */
+.glassimg {
+    width: 18px;
+    font-weight: 300px;
+    background-color: transparent;
+    position: absolute;
+    padding-top: 14px;
+    padding-left: 13px;
+    filter: invert(70%) sepia(6%) saturate(311%) hue-rotate(169deg) brightness(90%) contrast(90%);
+}
+.section-search span {
+    color:#9aa0a6;
+}
+.section-search {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    /*padding-left: 29.5%;*/
+    padding-top: 26px;
+}
+.searchbar {
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    width: 582px;
+    max-width: 584px;
 
+}
+.searchbar:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
 /* ------- Footer Bar ------- */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    height: 46px;
+    padding: 0 20px 0 20px;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    bottom: 0px;
+}
+
+footer ul a {
+    color: #5f6368;
+    padding: 15px;
+}
+.footer-right {
+    margin-right: 35px;
+}
