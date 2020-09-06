@@ -1,1 +1,1 @@
-Trying to recreate google.com homepage from scratch.
+Trying to recreate Google homepage from scratch!
